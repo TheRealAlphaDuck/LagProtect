@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"package": "com.lagprotect.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"KeepAlivePacketMixin",
+		"ServerGamePacketListenerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
