@@ -1,15 +1,14 @@
 package com.lagprotect.mixin;
 
 import com.lagprotect.CustomKeepAliveAccess;
-import net.minecraft.network.protocol.PacketType;
 import net.minecraft.network.protocol.common.ServerCommonPacketListener;
 import net.minecraft.network.protocol.common.ServerboundKeepAlivePacket;
 import org.spongepowered.asm.mixin.Mixin;
-import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
+@SuppressWarnings("all")
 @Mixin(ServerboundKeepAlivePacket.class)
 public abstract class KeepAlivePacketMixin {
 
